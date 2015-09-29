@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+    
+    
+    #plane 
+    {
+        margin-top: 150px;
+        margin-left: 100px;
+        transition: all 2s ease-in-out;
+    }
+    #plane:hover 
+        {
+	       transform: translate(0,100px)
+        }
+    
+
+    #animate-area	
+    { 
+        
+	width: 3000px; 
+	height: 666px; 
+	background-image: url(clouds.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 50s linear infinite;
+    }
+    
+    @keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: -100% 0; }
+    }
+    
+</style>
+</head>
+<body>
+
+    <div id = "plane" style="position:absolute">
+    <img src="plane1.png" width=250px; height=250px>
+    </div>
+    <div id = "animate-area"> </div>
+
+    
+
+
+</body>
+</html>
